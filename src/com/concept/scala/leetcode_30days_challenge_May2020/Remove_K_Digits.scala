@@ -53,7 +53,7 @@ object Remove_K_Digits {
     *
     *
     */
-  def removeKdigits(num: String, k: Int): String = {
+  def removeKdigits(num: String, k: Int): Unit = {
     var J = k
 
     val len = num.length
@@ -80,7 +80,7 @@ object Remove_K_Digits {
     sb.reverseContents()
     while (sb.length > 1 && sb.head == '0') sb.deleteCharAt(0)
 
-    sb.toInt.toString
+   // sb.toInt.toString
   }
 }
 

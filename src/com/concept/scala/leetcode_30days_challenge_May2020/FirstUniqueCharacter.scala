@@ -58,7 +58,7 @@ object FirstUniqueCharacter {
     return -1
   }
 
-  def firstUniqChar_byCollection(s: String): Int = {
+  def firstUniqChar_byCollection(s: String): Unit = {
     val unique = s.zipWithIndex
       .map(x => (x._1, s.count(_ == x._1)))
       .distinct
@@ -68,7 +68,7 @@ object FirstUniqueCharacter {
       .getOrElse("")
       .toString.toCharArray.head
 
-    if (unique isWhitespace) return -1 else return s indexOf unique
+    //if (unique isWhitespace) return -1 else return s indexOf unique
 
 
   }

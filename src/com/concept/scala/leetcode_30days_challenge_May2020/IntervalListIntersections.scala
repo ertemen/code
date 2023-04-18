@@ -44,7 +44,7 @@ object IntervalListIntersections {
     val a = convertStringToNestedArray("[[0,2],[5,10],[13,23],[24,25]]")
     val b = convertStringToNestedArray("[[1,5],[8,12],[15,24],[25,26]]")
     val totalRuntime = RunTimeCalculation.calculateRunTime {
-      intervalIntersection(a, b).foreach { x => print(x.mkString("[", ",", "]")); print("\t") }
+     // intervalIntersection(a, b).foreach { x => print(x.mkString("[", ",", "]")); print("\t") }
     }
     println(s" \n total run time = seconds $totalRuntime seconds OR ${totalRuntime * 1000} milliseonds")
     /*
@@ -66,7 +66,7 @@ object IntervalListIntersections {
     * Memory Usage: 85.7 MB, less than 100.00% of Scala online submissions for Interval List Intersections.
     *
     */
-  def intervalIntersection(A: Array[Array[Int]], B: Array[Array[Int]]): Array[Array[Int]] = {
+  def intervalIntersection(A: Array[Array[Int]], B: Array[Array[Int]]): Unit= {
     val result = scala.collection.mutable.ListBuffer[Array[Int]]()
     var (i, j) = (0, 0)
 
@@ -77,7 +77,7 @@ object IntervalListIntersections {
       if (A(i)(1) < B(j)(1)) i += 1 else j += 1
 
     }
-    result toArray
+    //result toArray
   }
 
   def convertStringToNestedArray(str: String): Array[Array[Int]] = {

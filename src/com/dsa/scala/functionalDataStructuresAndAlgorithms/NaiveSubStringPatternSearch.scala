@@ -5,7 +5,9 @@ import com.concept.scala.RunTimeCalculation
 /** *
   *
   * @todo find the index of the pattern(if exists) in input string by using naive backtracking method
-  * @example if input string is "when a job is scheduled to execute every minute by using cron.d in Linux and that job fetches and updates items from a queue persisted in MySQL, that job can take longer than 1 minute to execute and thus you can end up with 2 or 3 processes executing at the same time and contending on the same MySQL table."
+  * @example if input string is "when a job is scheduled to execute every minute by using cron.d in Linux
+  *          and that job fetches and updates items from a queue persisted in MySQL, that job can take longer
+  *          than 1 minute to execute and thus you can end up with 2 or 3 processes executing at the same time and contending on the same MySQL table."
   *          and target pattern is "MySQL"
   *          return 138 (MySQL first ocuurance is at 138th index of input string)
   *

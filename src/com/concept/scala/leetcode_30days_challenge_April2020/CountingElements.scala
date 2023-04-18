@@ -50,7 +50,8 @@ object CountingElements {
     * *      Memory Usage: 50.7 MB
     *
     */
-  def countElements (array: Array[Int]): Int = {
+  def countElements (array: Array[Int]): Unit = {
+    /*
     var counter = 0
     val newArray = array map (_ + 1) // increment each element in array
 
@@ -58,6 +59,8 @@ object CountingElements {
       if (array contains newArray(i)) counter += 1
     }
     counter
+
+     */
   }
 
 

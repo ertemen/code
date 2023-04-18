@@ -19,7 +19,11 @@ object AreaUnderCurvesAndVolumeRevolvingCurve extends App{
 
   def summation (func: (List[Int], List[Int], Double) => Double, upperLimit: Int, lowerLimit: Int, coefficients: List[Int], powers: List[Int]): Double = {
     val step = 0.001
+    /*
     (lowerLimit.toDouble to upperLimit.toDouble by step).map(x => func(coefficients, powers, x) * step).sum
+
+     */
+    step
   }
 
 }

@@ -13,9 +13,11 @@ object MiniMaxSum {
   }
 
   def miniMaxSum (inputArray: Array[Long]) {
+   /*
     val arraySorted = inputArray sorted
     val (max, min): (BigInt, BigInt) = (arraySorted.tail.sum, arraySorted .reverse.tail.sum)
     println(s"$min $max")
+    */
 
   }
 

@@ -18,10 +18,10 @@ package com.concept.scala.leetcode_30days_challenge_August2020
   */
 object FindAllDuplicatesInAnArray {
   def main(args: Array[String]): Unit = {
-    println(findDuplicates(Array(4, 3, 2, 7, 8, 2, 3, 1)).mkString(","))
+    //println(findDuplicates(Array(4, 3, 2, 7, 8, 2, 3, 1)).mkString(","))
   }
 
-  def findDuplicates(nums: Array[Int]): List[Int] = nums diff nums.distinct toList
+ // def findDuplicates(nums: Array[Int]): List[Int] = nums diff nums.distinct toList
 
   def findDuplicates2(nums: Array[Int]): List[Int] = nums.map(e => (e, nums.count(_ == e))).filter(_._2 == 2).map(_._1).distinct.toList
 

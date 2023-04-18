@@ -18,7 +18,7 @@ print multplication table as in below format with proper padding and indentation
  */
 object MultiplicationTable extends App{
 
-    multiplication_table_imperative()
+  //  multiplication_table_imperative()
     multiplication_table_functional().foreach(println)
 
 
@@ -55,7 +55,9 @@ object MultiplicationTable extends App{
         spaceLength + multipledResult
       }.mkString
       //println("\n")
-    }.mkString
+    }//.mkString
 
   }
+
+  println(multiplication_table_functional)
 }

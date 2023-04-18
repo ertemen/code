@@ -1,8 +1,5 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
-import scala.collection.mutable.ListBuffer
-import scala.io.StdIn
-
 /**
 * @todo Rotate the string
   * @example Input string => abc ,then output string should be =>bca cab abc
@@ -11,6 +8,7 @@ import scala.io.StdIn
   *
   */
 object StringRotator {
+  /*
   def main (args: Array[String]): Unit = {
     val listInput: ListBuffer[String] = ListBuffer()
     for (_ <- 1 to scala.io.StdIn.readLine.trim.toInt) listInput append StdIn.readLine
@@ -50,5 +48,7 @@ object StringRotator {
       .map(index => (inputString takeRight ((inputString length) - index)) + (inputString take index))
 
 
+
+   */
 }
 

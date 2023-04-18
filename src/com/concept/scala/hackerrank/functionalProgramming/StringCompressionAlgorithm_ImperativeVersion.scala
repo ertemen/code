@@ -12,12 +12,12 @@ import scala.collection.mutable.ListBuffer
   */
 object StringCompressionAlgorithm_ImperativeVersion {
   def main(args: Array[String]): Unit = {
-    val str = readLine() // "aaabbberfffllllluuq"
-    val ls = str.toList
+    //val str = readLine() // "aaabbberfffllllluuq"
+    //val ls = str.toList
     //fx(ls).foreach(println)
-    println(fx(ls)
-      .map(x => x._1 + "" + x._2)
-      .mkString.replace("1", ""))
+    //println(fx(ls)
+     // .map(x => x._1 + "" + x._2)
+     // .mkString.replace("1", ""))
 
 
   }

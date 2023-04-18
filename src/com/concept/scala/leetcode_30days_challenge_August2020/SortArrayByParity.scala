@@ -20,7 +20,7 @@ package com.concept.scala.leetcode_30days_challenge_August2020
   */
 object SortArrayByParity {
   def main(args: Array[String]): Unit = {
-    println(sortArrayByParity(Array(3, 1, 2, 4)).mkString(","))
+   // println(sortArrayByParity(Array(3, 1, 2, 4)).mkString(","))
     println(sortArrayByParity_builtin(Array(3, 1, 2, 4)).mkString(","))
   }
 
@@ -35,7 +35,7 @@ object SortArrayByParity {
     * Memory Usage: 77.1 MB
     *
     */
-  def sortArrayByParity(A: Array[Int]): Array[Int] = {
+  def sortArrayByParity(A: Array[Int]): Unit = {
     // edge cases
     if (A.length == 1) return A
     if (A.length == 0) return Array()
@@ -45,7 +45,7 @@ object SortArrayByParity {
     val isEven: Int => Boolean = _ % 2 == 0
     val isOdd: Int => Boolean = _ % 2 != 0
 
-    ((A getElementsIfArray isEven toList) ::: (A getElementsIfArray isOdd toList)).toArray
+    //((A getElementsIfArray isEven toList) ::: (A getElementsIfArray isOdd toList)).toArray
 
   }
 

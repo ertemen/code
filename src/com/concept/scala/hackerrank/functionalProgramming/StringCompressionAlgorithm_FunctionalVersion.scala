@@ -1,6 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 import scala.annotation.tailrec
+import scala.io.StdIn.readLine
 
 /**
 * @note Use functional programming, avoid imperative programming.(follwed by Version 1.1 and 1.2)

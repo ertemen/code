@@ -1,4 +1,4 @@
-package com.concept.scala.hackerrank.functionalProgramming
+package com.concept.scala
 
 /**
   * @todo
@@ -14,7 +14,12 @@ object SumOfOddListElements extends App {
 
   println(f(list1))
 
-  def f (list: List[Int]): Int = (for (i <- list.indices.filter(_ % 2 != 0)) yield list(i)).sum
+  def f(list: List[Int]): Int = (for (i <- list.indices.filter(_ % 2 != 0)) yield list(i)).sum
 
 
+  def sumOdds(ll:List[Int]):BigInt = {
+    ll.filter(_ % 2 != 0).sum
+  }
+
+  println(sumOdds(List(3, 2, 4, 6, 5, 7, 8, 0, 1)))
 }

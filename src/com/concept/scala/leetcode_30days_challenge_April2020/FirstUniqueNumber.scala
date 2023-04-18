@@ -91,11 +91,14 @@ class FirstUniqueNumber (_nums: Array[Int]) {
 
   _nums foreach add // execute add() foreach element in nums array
 
+  /*
   def showFirstUnique (): Int = {
     if (set_Of_UniqueValues isEmpty) -1
     else set_Of_UniqueValues.iterator.next
   }
 
+
+   */
   def add (value: Int) {
     if (set_Of_DuplicateValues contains value) return
 
@@ -127,8 +130,8 @@ class FirstUniqueNumber (_nums: Array[Int]) {
 
 object FirstUniqueNumber {
 
-  def main (args: Array[String]): Unit = {
-
+  def main(args: Array[String]): Unit = {
+    /*
     val firstUnique = new FirstUniqueNumber(Array(2, 3, 5))
     contentOfSets_At_the_moment(firstUnique)
     firstUnique.showFirstUnique() // return 2
@@ -147,9 +150,11 @@ object FirstUniqueNumber {
     contentOfSets_At_the_moment(firstUnique)
   }
 
-  def contentOfSets_At_the_moment (obj: FirstUniqueNumber) = println(s"\t\t\t\t unique set: ${obj.set_Of_UniqueValues} \t\tduplicate set : ${obj.set_Of_DuplicateValues}")
+ */
 
-  /*
+    def contentOfSets_At_the_moment(obj: FirstUniqueNumber) = println(s"\t\t\t\t unique set: ${obj.set_Of_UniqueValues} \t\tduplicate set : ${obj.set_Of_DuplicateValues}")
+
+    /*
 
  First instatiate with array===>  unique set: Set(2, 3, 5) 		duplicate set : Set()
  firstUnique.showFirstUnique()=>  unique set: Set(2, 3, 5) 		duplicate set : Set()
@@ -161,4 +166,5 @@ object FirstUniqueNumber {
  firstUnique.showFirstUnique()=>  unique set: Set(3) 		      duplicate set : Set(5, 2)
 
    */
+  }
 }

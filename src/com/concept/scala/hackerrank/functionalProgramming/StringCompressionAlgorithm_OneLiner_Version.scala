@@ -9,5 +9,5 @@ package com.concept.scala.hackerrank.functionalProgramming
   */
 object StringCompressionAlgorithm_OneLiner_Version extends App {
 //abbbbcdeeerxxxxxxxxxghsd
-  println("(\\w)\\1+".r.replaceAllIn(readLine(), x => "$1" + x.toString.length))
+  //println("(\\w)\\1+".r.replaceAllIn(readLine(), x => "$1" + x.toString.length))
 }

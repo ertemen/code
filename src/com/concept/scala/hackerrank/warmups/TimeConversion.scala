@@ -15,7 +15,8 @@ object TimeConversion {
 
   }
 
-  def convertTo24HFormat (inputTime: String): String = {
+  def convertTo24HFormat (inputTime: String): Unit = {
+    /*
     val len = inputTime length
     val meridiem = inputTime substring (len - 2)
     val timeArray = inputTime slice(0, len - 2) split (":")
@@ -30,5 +31,7 @@ object TimeConversion {
       }
     }
     finalTime
+
+     */
   }
 }

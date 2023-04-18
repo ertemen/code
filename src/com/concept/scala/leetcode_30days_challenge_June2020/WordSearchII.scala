@@ -1,7 +1,6 @@
 package com.concept.scala.leetcode_30days_challenge_June2020
 
 import scala.collection.mutable
-import scala.collection.mutable.ListBuffer
 
 /** **
   * Day 30 - June Challenge is completed
@@ -48,10 +47,10 @@ object WordSearchII {
     * Memory Usage: 54.9 MB
     *
     */
-  def findWords(board: Array[Array[Char]], words: Array[String]): List[String] = {
+  def findWords(board: Array[Array[Char]], words: Array[String]): Unit = {
     val result = mutable.ListBuffer[String]()
     for (word <- words if exist(board, word)) result append word
-    result toList
+    //result toList
   }
 
   def exist(board: Array[Array[Char]], word: String): Boolean = {

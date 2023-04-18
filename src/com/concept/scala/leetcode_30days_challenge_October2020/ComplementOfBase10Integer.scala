@@ -31,11 +31,7 @@ package com.concept.scala.leetcode_30days_challenge_October2020
   */
 object ComplementOfBase10Integer {
   def main(args: Array[String]): Unit = {
-    println(bitwiseComplment(5)) //2
-    println(bitwiseComplment(7)) //0
-    println(bitwiseComplment(10)) //5
-    println(bitwiseComplment(1)) //0
-    println(bitwiseComplment(0)) //1
+
     println("***************")
     println(bitwiseComplment1(5)) //2
     println(bitwiseComplment1(7)) //0
@@ -78,7 +74,7 @@ object ComplementOfBase10Integer {
     */
   def bitwiseComplment1(N: Int): Int = Integer.parseInt((N.toBinaryString.map(char => if (char == '1') '0' else '1')), 2)
 
-  def bitwiseComplment(N: Int): Int = binaryToDecimal(N.toBinaryString.map(char => if (char == '1') '0' else '1')) toInt
+ // def bitwiseComplment(N: Int): Int = binaryToDecimal(N.toBinaryString.map(char => if (char == '1') '0' else '1')) toInt
 
 
   /** *
